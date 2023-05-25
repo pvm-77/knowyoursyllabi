@@ -1,5 +1,4 @@
 {
-  "homepage": "http://pvm-77.github.io/knowyoursyllabi",
   
   "name": "knowyoursyllabi",
   "version": "0.1.0",
@@ -14,9 +13,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "postdeploy": "git add . && git commit -m 'Auto-deploy' && git push origin main",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
