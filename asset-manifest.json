@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/knowyoursyllabi/static/css/main.478495b8.css",
+    "main.js": "/knowyoursyllabi/static/js/main.ed5b46a4.js",
+    "index.html": "/knowyoursyllabi/index.html",
+    "main.478495b8.css.map": "/knowyoursyllabi/static/css/main.478495b8.css.map",
+    "main.ed5b46a4.js.map": "/knowyoursyllabi/static/js/main.ed5b46a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.478495b8.css",
+    "static/js/main.ed5b46a4.js"
+  ]
+}
