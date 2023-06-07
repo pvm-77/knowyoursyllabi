@@ -1,0 +1,60 @@
+.M6yXdA{
+    /* border: 1px solid red; */
+    top: 0;
+    z-index: 3;
+
+}
+.M6yXdA{
+    position: -webkit-sticky;
+    position: sticky;     /* it maintain navbar on top always */
+}
+.M6yXdA.hkW4sQ{
+    background-color: var(green);
+    padding-top: var();
+}
+._2pukyg{
+    position: relative;
+}
+
+
+.Ft_8Cg {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.Ft_8Cg.e2L4zw {
+    background-color: var(pink)
+}
+
+.Ft_8Cg.N6xJaA {
+    box-shadow: var(yellow)
+}
+
+.a6f7yQ {
+    transition: opacity .3s ease,-webkit-transform .3s ease;
+    transition: opacity .3s ease,transform .3s ease;
+    transition: opacity .3s ease,transform .3s ease,-webkit-transform .3s ease
+}
+
+
+.IMy50w {
+    box-sizing: border-box;
+    padding: 0 16px;
+    position: relative;
+    width: 100%
+}
+
+@media (min-width: 600px) {
+    .IMy50w {
+        padding:0 32px
+    }
+}
+
+@media (min-width: 900px) {
+    .IMy50w.EOPyDg {
+        padding-left:16px
+    }
+}

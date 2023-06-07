@@ -1,6 +1,8 @@
 
 import './App.css';
 import CourseCard from './components/CourseCard';
+import Footer from './components/footer/Footer';
+import Navbar from './components/navbar/Navbar';
 
 
 function App() {
@@ -104,7 +106,8 @@ function App() {
   }
 
   return (
-    <>
+    <div className='o9kseg yIDCqA'>
+      <Navbar/>
       <div className='card-wrapper'>
         <CourseCard course={course} />
         <CourseCard course={course} />
@@ -113,7 +116,8 @@ function App() {
         <CourseCard course={course} />
         <CourseCard course={course} />
       </div>
-    </>
+      <Footer/>
+    </div>
   );
 }
 

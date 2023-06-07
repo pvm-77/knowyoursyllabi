@@ -1,9 +1,30 @@
 
+#root{
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+}
+#root,body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 *::before,*::after,*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color-scheme: dark;
+}
+
+
+
+html {
+  --safe-area-inset-top: 0px;
+  --safe-area-inset-bottom: 0px;
+  --safe-area-inset-left: 0px;
+  --safe-area-inset-right: 0px
 }
 .card-wrapper {
     display: flex;

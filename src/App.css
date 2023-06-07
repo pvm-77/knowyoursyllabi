@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.yIDCqA{
+  height: 100%;
+  width:100% ;
+  position: relative;
+}
+
+.yIDCqA,[tabindex],button {
+  -webkit-tap-highlight-color: transparent
+}
+.o9Kseg{
+  background-color: green;
+  display: flex;
+  flex-direction:column ;
+  min-height: 100vh;
+}
