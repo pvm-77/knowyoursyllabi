@@ -1,63 +1,9 @@
-// 
-// import React from 'react';
-// import './coursecard.css'
-// const CourseCard = ({ course }) => {
-//     const { title, code, logo, units, books } = course;
-//     return (
-//         <div className="course-card card-shadow">
-//             <div className="course-header">
-//                 <h2>{title}</h2>
-//                 <p>Course Code: {code}</p>
-//                 <img src={logo} alt="Course Logo" />
-//             </div>
-//             <div class="course-units">
-//                 <h3 class="units-title">Units</h3>
-//                 <ul class="accordion">
-//                     {units.map((unit) => (
-//                         <li key={unit.id} className='unit-item'>
-//                             <button class="unit-button">
-//                                 {unit.name}
-//                                 <span class="arrow-icon">&#9660;</span>
-//                             </button>
-// 
-//                             <ul class="subtopics">
-//                                 {unit.topics.map((topic) => (
-//                                     <li key={topic.id}>{topic.name}</li>
-//                                 ))}
-//                             </ul>
-//                         </li>
-//                     ))}
-//                 </ul>
-//             </div>
-// 
-// 
-//             <div className="course-book">
-//                 <h3 style={{ textAlign: 'center' }}>Recommended Books</h3>
-//                 {books.map((book) => (
-//                     <div key={book.id} className='book-wrapper'>
-//                         <p>Authors: {book.authors.join(', ')}</p>
-// 
-//                         <h4>{book.title}</h4>
-//                         <hr />
-//                     </div>
-// 
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
-// 
-// export default CourseCard;
-
-
-
-
-
 import React, { useState } from 'react';
 import './coursecard.css';
 
 const CourseCard = ({ course }) => {
     const { title, code, logo, units, suggestedReading } = course;
+    console.log('logo',logo)
     const [openUnits, setOpenUnits] = useState([]);
 
     const toggleUnit = (unitId) => {
@@ -73,7 +19,7 @@ const CourseCard = ({ course }) => {
             <div className="course-header">
                 <h2>{title}</h2>
                 <p>Course Code: {code}</p>
-                <img src={logo} alt="Course Logo" />
+                <img src={logo} alt="Course Logo"  width={80}/>
             </div>
             <div className="course-units">
                 <h3 className="units-title">Units</h3>

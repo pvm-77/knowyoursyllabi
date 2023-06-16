@@ -1,14 +1,12 @@
-.rd_Sew {
-  /* border: 1px solid violet; */
-}
+
 .C2ahAg {
   display: none;
 }
 .UKx_fw {
-  /* background: #ffc0cb; */
+
   box-sizing: border-box;
   width: 100%;
-  border-top: 1px solid yellow;
+ 
 }
 
 .fFOiLQ {
@@ -35,7 +33,6 @@
     font-weight: 600;
 }
 .wc0cmA{
-border: 1px solid red;
 margin: 0 auto;
 padding: 0 32px;
 }
@@ -48,7 +45,6 @@ padding: 0 32px;
 
 
 .nr6A9g{
-    /* border: 1px solid goldenrod; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -56,7 +52,6 @@ padding: 0 32px;
     padding: 24px 0;
 }
 .nr6A9g.IqDI1w{
-    border-top: 1px solid goldenrod;
 }
 .nr6A9g.kkLD2A{
     flex-direction: row;
@@ -96,7 +91,6 @@ padding: 0 32px;
 }
 
 ._2xcaIA:not(:last-child){
-    border: 1px solid green;
     margin-bottom: 8px;
 }
 .ZSdr0w{
@@ -109,7 +103,6 @@ padding: 0 32px;
 }
 
 .HQPhMQ{
-    border: 1px solid blue;
     display: grid;
     align-items: center;
     align-content: center;
@@ -141,7 +134,6 @@ padding: 0 32px;
 }
 
 .HFtdmQ{
-    border: 1px solid crimson;
     display: flex;
     justify-content: flex-end;
 }
@@ -173,7 +165,6 @@ padding: 0 32px;
     width: 24px;
 }
 .dkWypw{
-    border: 1px solid yellow;
     display: inline-flex;
     align-items: center;
     box-sizing: border-box;
@@ -193,12 +184,10 @@ padding: 0 32px;
 }
 .JPEong {
   display: block;
-  border: 1px solid yellow;
 }
 @media (min-width: 900px) {
   .C2ahAg {
     display: block;
-    /* border: 1px solid red; */
   }
   .JPEong {
     display: none;
