@@ -850,7 +850,7 @@ function App() {
 
   return (
     <div className='o9kseg yIDCqA'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className='card-wrapper'>
         {courses.map(course=><CourseCard course={course}/>)}
         

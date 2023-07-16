@@ -1,21 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
 
-#root{
+#root {
   position: relative;
   z-index: 0;
   margin: 0;
   padding: 0;
 }
-#root,body,html{
+
+#root,
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
-*::before,*::after,*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color-scheme: dark;
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: dark;
+  font-family: poppins;
 }
 
 
@@ -26,27 +33,33 @@ html {
   --safe-area-inset-left: 0px;
   --safe-area-inset-right: 0px
 }
+
 .card-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}
+
+/* Larger Screens */
+@media (min-width: 768px) {
+  .card-wrapper {
+    border: 4px solid pink;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
   }
-  
-  /* Larger Screens */
-  @media (min-width: 768px) {
-    .card-wrapper {
-        display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-   
+
+  .course-card {
+    width: 28.33%;
   }
-  
-  /* Desktop/Laptop */
-  @media (min-width: 1200px) {
-    .card-wrapper {
-        flex-direction: row;
-      /* Adjust the width as per your design */
-    }
+
+}
+
+/* Desktop/Laptop */
+@media (min-width: 1200px) {
+  .card-wrapper {
+    flex-direction: row;
+    /* Adjust the width as per your design */
   }
+}

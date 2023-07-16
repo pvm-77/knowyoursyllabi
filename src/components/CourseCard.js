@@ -3,7 +3,7 @@ import './coursecard.css';
 
 const CourseCard = ({ course }) => {
     const { title, code, logo, units, suggestedReading } = course;
-    console.log('logo',logo)
+    console.log('logo', logo)
     const [openUnits, setOpenUnits] = useState([]);
 
     const toggleUnit = (unitId) => {
@@ -17,16 +17,19 @@ const CourseCard = ({ course }) => {
     return (
         <div className="course-card card-shadow">
             <div className="course-header">
-                <h2>{title}</h2>
-                <p>Course Code: {code}</p>
-                <img src={logo} alt="Course Logo"  width={80}/>
+                <div className='course-header-contents'>
+                    <p>{title}</p>
+                    <p className='sub-heading'>Course Code: {code}</p>
+                </div>
+                <img src={logo} alt="Course Logo" width={40} className='course-logo' />
             </div>
+
             <div className="course-units">
-                <h3 className="units-title">Units</h3>
+                <p className="units-title">Units</p>
                 <ul className="accordion">
                     {units.map((unit) => (
                         <li key={unit.id} className="unit-item">
-                            <button className="unit-button" onClick={() => toggleUnit(unit.id)}>
+                            <button className="btn unit-button" onClick={() => toggleUnit(unit.id)}>
                                 {unit.name}
                                 <span className={`arrow-icon ${openUnits.includes(unit.id) ? 'up' : ''}`}>
                                     {openUnits.includes(unit.id) ? '▲' : '▼'}
@@ -44,7 +47,8 @@ const CourseCard = ({ course }) => {
                     ))}
                 </ul>
             </div>
-            <div className="course-book">
+
+            {/* <div className="course-book">
                 <h3 style={{ textAlign: 'center' }}>Recommended Books</h3>
                 {suggestedReading.map((book) => (
                     <div key={book.title} className="book-wrapper">
@@ -61,7 +65,8 @@ const CourseCard = ({ course }) => {
 
                     </div>
                 ))}
-            </div>
+            </div> */}
+
         </div>
     );
 };

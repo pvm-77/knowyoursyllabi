@@ -1,33 +1,60 @@
 .course-card {
     margin: 20px;
-    background-color: #333;
+    background-color: #343A46;
     color: white;
-    border-radius: 16px;
+    /* width: 100%; */
+    /* border-radius: 16px; */
 
 
 }
 
 .card-shadow {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.5);
-    border: 1px solid silver;
+    /* border: 1px solid silver; */
 
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .card-shadow:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.15);
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
 }
 
 
 .course-header {
-    background-color: rgb(58, 0, 46);
-    border-radius: 16px;
-
+    /* background-color: rgb(58, 0, 46); */
+    /* border-radius: 16px; */
+    border: 1px solid red;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* align-items: center; */
+    /* align-content: center; */
+    padding: 6px;
+
+}
+
+.course-header-contents {
+    /* border: 1px solid red; */
+
+    /* width: 70%; */
+}
+
+.course-logo {
+    /* border: 1px solid green; */
+    margin-left: 2px;
+    padding: 4px;
+}
+
+.course-logo:hover {
+    border-radius: 8px;
+    background-color: rgba(88, 175, 223, .1);
+
+}
+
+.sub-heading {
+    font-size: 14px;
+    font-weight: 100;
 
 }
 
@@ -50,10 +77,12 @@
     align-content: center;
     border-bottom: 2px solid rgb(198, 123, 181);
 }
-.book-detail{
+
+.book-detail {
     display: none;
 }
-.book-wrapper:last-child{
+
+.book-wrapper:last-child {
     border-bottom: none;
 }
 
@@ -76,11 +105,17 @@
     margin-bottom: 0.6rem;
 }
 
+.btn {
+    outline: none;
+    border: none;
+    background: none;
+}
+
 .unit-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #087EA4;
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     padding: 12px 14px;
@@ -89,8 +124,15 @@
     text-align: left;
     color: aliceblue;
     border-radius: 2%;
-    font-size: 24px;
+    font-size: 12px;
     margin: 0 auto;
+    border-radius: 16px;
+}
+
+.unit-button:hover {
+    background-color: #087EA4;
+    opacity: 0.7;
+
 }
 
 .arrow-icon {
